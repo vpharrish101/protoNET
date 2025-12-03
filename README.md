@@ -22,14 +22,17 @@ This implementation includes:-
 ## Model Architecture
 The backbone CNN consists of three convolutional blocks, each with:
 - Conv2D -> BatchNorm -> ReLU -> Dropout -> MaxPool
-- 
+  
 It reduces a 32x32 RGB image to a 1024-dimensional flattened feature vector, which is then passed through a linear layer to obtain embeddings of the specified output size.
 
 ## Dataset
 This implementation uses the CIFAR-FS dataset provided by Learn2Learn:
 - Based on CIFAR-100, split into train, validation, and test classes
 - Automatically downloaded on first run
-- Transforms include resizing, cropping, flipping, and color jittering
+
+## Results
+<img width="1188" height="585" alt="image" src="https://github.com/user-attachments/assets/067de2a4-9a8f-4c4c-8dd9-e258c202ff63" />
+
 
 
 
